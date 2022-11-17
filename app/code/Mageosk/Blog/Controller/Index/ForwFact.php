@@ -10,6 +10,9 @@ use Magento\Framework\Controller\ResultInterface;
 
 class ForwFact implements HttpGetActionInterface
 {
+    /**
+     * TODO: Missing doc bloc
+     */
     protected $resultForwardFactory;
 
     /***
@@ -26,8 +29,10 @@ class ForwFact implements HttpGetActionInterface
      */
     public function execute() : Forward
     {
-        $resultForwardFactory = $this->resultForwardFactory->create();
-        $resultForwardFactory->forward('ListAction');
-        return $resultForwardFactory;
+        /**
+         * TODO: Please choose right name for variable.
+         */
+        $resultForward = $this->resultForwardFactory->create();
+        return $resultForward->forward('ListAction');
     }
 }
