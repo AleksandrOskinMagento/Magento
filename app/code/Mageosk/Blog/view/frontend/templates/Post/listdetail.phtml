@@ -1,0 +1,8 @@
+<?php
+/** @var Magento\Framework\View\Element\Template $block */
+?>
+<div class="blog-post-listdetail">
+    <h1><?= __('Blog listdetail') ?></h1>
+    <h2><?= __('PostDetail: %1', $block->getRequest()->getParam('id', 'Missing')) ?></h2>
+    <p><?= __('Update %1', date("Y-m-d H:i:s"))?></p>
+</div>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page layout="3columns"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="blog.index.index.main"
+                   template="Mageosk_Blog::index/index.phtml">
+            </block>
+        </referenceContainer>
+        <referenceContainer name="div.sidebar.additional">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="blog.index.index.sidebar.additional"
+                   template="Mageosk_Blog::sidebar.phtml">
+            </block>
+        </referenceContainer>
+        <referenceContainer name="sidebar.main">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="blog.index.index.sidebar.main"
+                   template="Mageosk_Blog::sidebar_main.phtml">
+            </block>
+        </referenceContainer>
+        <referenceBlock name="catalog.compare.sidebar" display="false"></referenceBlock>
+        <referenceBlock name="wishlist_sidebar" display="false"></referenceBlock>
+    </body>
+</page>

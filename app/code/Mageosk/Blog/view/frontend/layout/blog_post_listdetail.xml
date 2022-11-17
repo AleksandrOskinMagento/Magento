@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page layout="2columns-right"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="blog.post.listdetail.main"
+                   template="Mageosk_Blog::post/listdetail.phtml">
+            </block>
+        </referenceContainer>
+        <referenceContainer name="div.sidebar.additional">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="blog.post.listdetail.list"
+                   template="Mageosk_Blog::post/list.phtml">
+            </block>
+        </referenceContainer>
+        <referenceBlock name="catalog.compare.sidebar" display="false"></referenceBlock>
+        <referenceBlock name="wishlist_sidebar" display="false"></referenceBlock>
+    </body>
+</page>
