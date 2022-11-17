@@ -26,6 +26,11 @@ class RedirFact implements HttpGetActionInterface
     public function execute() : Redirect
     {
         $resultRedirect = $this->resultRedirectFactory->create();
+        /**
+         * TODO: This is a bad practice to hardcode such data as url.
+         * Cause depending on Server configuration at can be https, etc
+         * Please use rework with - return $this->redirectFactory->create()->setPath('index/index/post', ['param' => 'testParam']);
+         */
         $redirectLink = 'http://education.magento.com';
         $resultRedirect->setUrl($redirectLink);
         return $resultRedirect;
