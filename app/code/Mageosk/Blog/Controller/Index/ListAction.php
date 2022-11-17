@@ -10,6 +10,9 @@ use Magento\Framework\Controller\ResultInterface;
 class ListAction implements HttpGetActionInterface
 {
     /**
+     * TODO: wrong return type.
+     */
+    /**
      * @return ResponseInterface|ResultInterface|void
      */
     public function execute()
