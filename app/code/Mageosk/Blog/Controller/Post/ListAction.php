@@ -1,5 +1,4 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace Mageosk\Blog\Controller\Post;
 
@@ -17,7 +16,7 @@ class ListAction implements HttpGetActionInterface
     ) {}
 
     /**
-     * @return \Magento\Framework\View\Result\Page
+     * @return Page
      */
     public function execute() : Page
     {

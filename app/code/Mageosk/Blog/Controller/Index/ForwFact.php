@@ -1,18 +1,20 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace Mageosk\Blog\Controller\Index;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\Result\Forward;
 use Magento\Framework\Controller\Result\ForwardFactory;
-use Magento\Framework\Controller\ResultInterface;
 
 class ForwFact implements HttpGetActionInterface
 {
+    /**
+     * @var ForwardFactory
+     *
+     */
     protected $resultForwardFactory;
 
-    /***
+    /**
      * @param ForwardFactory $resultForwardFactory
      */
     public function __construct(
@@ -26,8 +28,7 @@ class ForwFact implements HttpGetActionInterface
      */
     public function execute() : Forward
     {
-        $resultForwardFactory = $this->resultForwardFactory->create();
-        $resultForwardFactory->forward('ListAction');
-        return $resultForwardFactory;
+        $resultForward = $this->resultForwardFactory->create();
+        return $resultForward->forward('ListAction');
     }
 }

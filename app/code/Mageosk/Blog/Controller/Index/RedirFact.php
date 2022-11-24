@@ -1,5 +1,4 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace Mageosk\Blog\Controller\Index;
 
@@ -9,9 +8,12 @@ use Magento\Framework\Controller\Result\RedirectFactory;
 
 class RedirFact implements HttpGetActionInterface
 {
+    /**
+     * @var RedirectFactory
+     */
     protected $resultRedirectFactory;
 
-    /***
+    /**
      * @param RedirectFactory $resultRedirectFactory
      */
     public function __construct(
@@ -26,8 +28,7 @@ class RedirFact implements HttpGetActionInterface
     public function execute() : Redirect
     {
         $resultRedirect = $this->resultRedirectFactory->create();
-        $redirectLink = 'http://education.magento.com';
-        $resultRedirect->setUrl($redirectLink);
-        return $resultRedirect;
+        //$redirectLink = 'http://education.magento.com';
+        return $resultRedirect->setPath('blog/post/list');
     }
 }

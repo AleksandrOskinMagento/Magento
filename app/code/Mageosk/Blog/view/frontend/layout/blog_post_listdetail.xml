@@ -9,13 +9,21 @@
                    template="Mageosk_Blog::post/listdetail.phtml">
             </block>
         </referenceContainer>
+        <!--
         <referenceContainer name="div.sidebar.additional">
             <block class="Magento\Framework\View\Element\Template"
                    name="blog.post.listdetail.list"
                    template="Mageosk_Blog::post/list.phtml">
             </block>
         </referenceContainer>
-        <referenceBlock name="catalog.compare.sidebar" display="false"></referenceBlock>
-        <referenceBlock name="wishlist_sidebar" display="false"></referenceBlock>
+        -->
+        <referenceContainer name="div.sidebar.additional">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="blog.post.listdetail.sidebar.additional"
+                   template="Mageosk_Blog::sidebar.phtml">
+            </block>
+        </referenceContainer>
+        <referenceBlock name="catalog.compare.sidebar" display="false"/>
+        <referenceBlock name="wishlist_sidebar" display="false"/>
     </body>
 </page>

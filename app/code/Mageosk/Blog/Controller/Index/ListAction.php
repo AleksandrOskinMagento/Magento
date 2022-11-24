@@ -1,18 +1,15 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace Mageosk\Blog\Controller\Index;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
-use Magento\Framework\App\ResponseInterface;
-use Magento\Framework\Controller\ResultInterface;
 
 class ListAction implements HttpGetActionInterface
 {
     /**
-     * @return ResponseInterface|ResultInterface|void
+     * @return string
      */
-    public function execute()
+    public function execute() : string
     {
         die('Hello ListAction');
     }

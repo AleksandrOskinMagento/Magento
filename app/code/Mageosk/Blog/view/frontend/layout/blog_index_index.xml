@@ -21,7 +21,7 @@
                    template="Mageosk_Blog::sidebar_main.phtml">
             </block>
         </referenceContainer>
-        <referenceBlock name="catalog.compare.sidebar" display="false"></referenceBlock>
-        <referenceBlock name="wishlist_sidebar" display="false"></referenceBlock>
+        <referenceBlock name="catalog.compare.sidebar" display="false"/>
+        <referenceBlock name="wishlist_sidebar" display="false"/>
     </body>
 </page>

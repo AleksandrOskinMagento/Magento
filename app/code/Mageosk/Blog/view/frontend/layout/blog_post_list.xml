@@ -7,6 +7,9 @@
             <block class="Magento\Framework\View\Element\Template"
                    name="blog.post.list"
                    template="Mageosk_Blog::post/list.phtml">
+                <arguments>
+                    <argument name="viewModel" xsi:type="object">Mageosk\Blog\ViewModel\PostList</argument>
+                </arguments>
             </block>
         </referenceContainer>
     </body>

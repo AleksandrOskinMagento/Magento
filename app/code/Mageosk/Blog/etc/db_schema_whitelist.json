@@ -1,0 +1,15 @@
+{
+    "mageosk_blog_post": {
+        "column": {
+            "id": true,
+            "title": true,
+            "content": true,
+            "creation_time": true,
+            "update_time": true,
+            "is_active": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
