@@ -14,6 +14,7 @@ class PostList implements ArgumentInterface
         private CollectionFactory $collectionFactory
     ){}
 
+    /** TODO: add return tyoe anotation */
     public function getPostList()
     {
         /** @var Mageosk\Blog\Model\ResourceModel\CollectionFactory $postCollection */
