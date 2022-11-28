@@ -8,6 +8,7 @@
 <div class="blog-post-list">
     <h1><?= __('Blog posts') ?></h1>
     <ul>
+<!--       It's better to add if statement to check if there is any post. In Case no - message to show like this "There are no any posts for now."    -->
         <?php foreach ($postList as $post) :?>
             <li><a href="<?= $block->getUrl('blog/post/listdetail', ['id'=>$post->getId()]) ?>"><?= $post->getTitle() ?></a></li>
         <?php endforeach; ?>
